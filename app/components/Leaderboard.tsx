@@ -56,7 +56,7 @@ const Leaderboard: React.FC = () => {
                                     <img
                                         src={item.user.twitterImage}
                                         alt={item.user.twitterHandle}
-                                        className="w-12 h-12 rounded-full"
+                                        className="w-12 h-12 rounded-full border-2 border-gray-400 p-1"
                                     />
                                 </a>
                                 <div>
