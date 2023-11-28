@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react';
 import { UserData } from '@/app/types/index';
-import Image from 'next/image';
+export const revalidate = 0;
 
 const Leaderboard: React.FC = () => {
     const [data, setData] = useState<UserData[]>([]);
@@ -10,7 +10,9 @@ const Leaderboard: React.FC = () => {
 
 
     useEffect(() => {
-        fetch('/api/getLeaderboard')
+        fetch('/api/getLeaderboard', {
+            next: { revalidate: 0 }
+        })
             .then((response) => response.json())
             .then((response) => {
                 setData(response.data);
