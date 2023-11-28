@@ -5,8 +5,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'CrystalDash Leaderboard',
-  description: 'Top 100 CrystalDash users by points',
+  title: 'PortalCoin Leaderboard',
+  description: 'Top 100 PortalCoin users by points',
 }
 
 export default function RootLayout({

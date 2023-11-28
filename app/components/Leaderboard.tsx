@@ -36,7 +36,7 @@ const Leaderboard: React.FC = () => {
 
     return (
         <div className="text-black">
-            <h1 className="text-5xl font-bold text-white mt-5 text-center">CrystalDash Leaderboard</h1>
+            <h1 className="text-5xl font-bold text-white mt-5 text-center">PortalCoin Leaderboard</h1>
             <h3 className='text-2xl font-bold text-white mb-5 text-center'>Created by <a href='https://x.com/dhigh_eth' target="_blank" rel="noopener noreferrer" className='text-blue-500'>Daniel High</a></h3>
             <div className="w-full max-w-6xl mx-auto px-4">
                 <input
