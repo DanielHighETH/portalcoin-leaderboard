@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+export const revalidate = 0;
 
 export async function GET() {
     const url = process.env.LINK;
@@ -8,7 +9,9 @@ export async function GET() {
     }
 
     try {
-        const response = await fetch(url);
+        const response = await fetch(url, {
+            next: { revalidate: 0 }
+        });
         if (!response.ok) {
             return NextResponse.json({ error: `HTTP error! status: ${response.status}` }, { status: 500 });
 
